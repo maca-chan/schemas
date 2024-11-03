@@ -1,0 +1,81 @@
+<!-- SCHEMA DE EMPRESA LOCAL -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "[Nombre del Negocio]",
+      "image": "[URL de la imagen del negocio]",
+      "@id": "[URL del negocio]",
+      "url": "[URL del negocio]",
+      "telephone": "[Número de teléfono del negocio]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Dirección completa del negocio]",
+        "addressLocality": "[Ciudad]",
+        "addressRegion": "[Estado o Provincia]",
+        "postalCode": "[Código postal]",
+        "addressCountry": "[Código del país, por ejemplo, ES para España]"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": [Latitud del negocio],
+        "longitude": [Longitud del negocio]
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "[Hora de apertura, por ejemplo, 08:00]",
+          "closes": "[Hora de cierre, por ejemplo, 18:00]"
+        }
+      ],
+      "priceRange": "[Rango de precios, por ejemplo, $$]"
+    }
+</script>
+
+
+<!-- SCHEMA DE SERVICIO -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "[Tipo de servicio, por ejemplo, Fontanería]",
+        "provider": {
+        "@type": "LocalBusiness",
+        "name": "[Nombre del Negocio]",
+        "url": "[URL del negocio]",
+        "telephone": "[Número de teléfono del negocio]",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[Dirección completa del negocio]",
+            "addressLocality": "[Ciudad]",
+            "addressRegion": "[Estado o Provincia]",
+            "postalCode": "[Código postal]",
+            "addressCountry": "[Código del país, por ejemplo, ES para España]"
+        }
+        },
+        "areaServed": {
+        "@type": "Place",
+        "name": "[Área de servicio, por ejemplo, Provincia de Madrid]"
+        },
+        "description": "[Descripción del servicio ofrecido]",
+        "offers": {
+        "@type": "Offer",
+        "url": "[URL del servicio]",
+        "priceCurrency": "[Moneda, por ejemplo, EUR]",
+        "price": "[Precio del servicio]",
+        "eligibleRegion": {
+            "@type": "Place",
+            "name": "[Región donde el servicio está disponible]"
+        },
+        "availability": "https://schema.org/InStock"
+        }
+    }
+</script>
